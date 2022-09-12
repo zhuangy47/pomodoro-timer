@@ -1,6 +1,8 @@
 from win10toast_click import ToastNotifier
 import time
 import os
+import sys
+
 class color:
    PURPLE = '\033[95m'
    CYAN = '\033[96m'
@@ -139,5 +141,5 @@ while (True):
                 time_left = short_break_time
 show_notif("You've finished all of the cycles! Timer has closed.")
 print("Finished!")
-quit()
+sys.exit(0)
     

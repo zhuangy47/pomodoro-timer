@@ -29,7 +29,7 @@ def show_notif(message : str):
     toaster.show_toast(
     "Pomodoro Timer", # title
     message, # message 
-    icon_path=None, # 'icon_path' 
+    icon_path="pomodoro.ico", # 'icon_path' 
     duration=1, # for how many seconds toast should be visible; None = leave notification in Notification Center
     threaded=True, # True = run other code in parallel; False = code execution will wait till notification disappears 
     )
@@ -137,6 +137,7 @@ while (True):
                 print("Short Break time!")
                 show_notif("Time to take a short break!")
                 time_left = short_break_time
+show_notif("You've finished all of the cycles! Timer has closed.")
 print("Finished!")
 quit()
     
